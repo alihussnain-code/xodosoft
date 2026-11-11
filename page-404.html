@@ -71,5 +71,13 @@
 <script src="js/SplitText.min.js"></script>
 <script src="js/custom-gsap.js"></script>
 <script src="js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const yearNode = document.querySelector(".current-year");
+      if (yearNode) {
+        yearNode.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
 </body>
 </html>
