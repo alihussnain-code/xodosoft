@@ -7,97 +7,8 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
 
-  <style>
-    /* 01 - Sticky header logo: give it a real size so it never collapses */
-    .sticky-header .logo {
-      flex-shrink: 0;
-    }
-
-    .sticky-header .logo img {
-      width: 180px;
-      height: 54px;
-      max-width: none;
-      max-height: none;
-    }
-
-    /* Header dropdown (Services): wide enough to keep each service on one line */
-    @media (min-width: 1200px) {
-      .main-menu .navigation>li>ul {
-        width: max-content;
-        min-width: 228px;
-      }
-
-      .main-menu .navigation>li>ul>li>a {
-        white-space: nowrap;
-      }
-
-      /* sticky bar menu sits near the right edge - open its dropdowns leftwards so they stay on screen */
-      .sticky-header .main-menu .navigation>li>ul {
-        left: auto;
-        right: 0;
-      }
-    }
-
-    /* 02 - Services: equal-height cards, "Read More" aligned at the bottom */
-    .services-section .row>[class*="col-"]:has(> .service-block) {
-      display: flex;
-    }
-
-    .services-section .service-block {
-      display: flex;
-      flex: 1 1 auto;
-      width: 100%;
-    }
-
-    .services-section .service-block .inner-block {
-      display: flex;
-      flex-direction: column;
-      flex: 1 1 auto;
-      width: 100%;
-    }
-
-    .services-section .service-block .service-button-one {
-      margin-top: auto;
-      align-self: flex-start;
-    }
-
-    /* 04 - X (Twitter) icon */
-    .x-icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      vertical-align: -0.125em;
-    }
-
-    /* 05 - Footer: proper spacing between Quick Link and Our Solutions */
-    .footer-widget-wrapper .footer-list-area {
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
-    }
-
-    .footer-widget-wrapper .footer-list-area .footer-widget-items:first-child {
-      flex-shrink: 0;
-    }
-
-    .footer-widget-wrapper .footer-list-area .widget-title .h4 {
-      white-space: nowrap;
-    }
-
-    /* the rotating circle (footer-vec) only shows on xxl screens - keep Quick Link clear of it */
-    @media (min-width: 1400px) {
-      .footer-widget-wrapper .footer-list-area {
-        padding-left: 70px;
-      }
-    }
-
-    @media (max-width: 499.98px) {
-      .footer-widget-wrapper .footer-list-area {
-        display: block;
-      }
-    }
-  </style>
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="icon" href="images/favicon.png" type="image/x-icon" />
@@ -113,161 +24,7 @@
 
     <div class="preloader"></div>
 
-    <!-- Back-to-top start -->
-    <div class="back-to-top-wrapper">
-      <button id="back_to_top" type="button" class="back-to-top-btn">
-        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11 6L6 1L1 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </svg>
-      </button>
-    </div>
-    <!-- Back-to-top start -->
-
-    <!-- Main Header-->
-    <header class="main-header header-style-one">
-      <div class="outer-box">
-        <div class="header-lower">
-          <!-- Main box -->
-          <div class="main-box">
-            <div class="logo-box">
-              <div class="logo">
-                <a href=""><img src="images/logo.svg" alt="Logo" width="180" height="54" /></a>
-              </div>
-            </div>
-
-            <!--Nav Box-->
-            <div class="nav-outer">
-              <nav class="nav main-menu">
-                <ul class="navigation">
-                  <li class="current">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="about.html">About</a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Services</a>
-                    <ul>
-                      <li><a href="page-service-details.html">Enterprise and Custom Software Development</a></li>
-                      <li><a href="page-service-details.html">Business Process Automation</a></li>
-                      <li><a href="page-service-details.html">Web and Mobile Application Development</a></li>
-                      <li><a href="page-service-details.html">Systems Integration and API Development</a></li>
-                      <li><a href="page-service-details.html">Digital Commerce Solutions</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="page-projects.html">Products</a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Blog</a>
-                    <ul>
-                      <li><a href="news-grid.html">Blog Grid</a></li>
-                      <li><a href="news-details.html">Blog Details</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="page-contact.html">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <!-- Outer Box -->
-            <div class="action-box">
-              <div class="header-btn">
-                <a href="page-contact.html" class="theme-btn-two">Let’s Talk <i
-                    class="fa-light fa-arrow-up-right"></i></a>
-              </div>
-
-              <!-- Mobile Nav toggler -->
-              <div class="mobile-nav-toggler">
-                <div class="shape-line-img"><i class="fas fa-bars"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Menu  -->
-      <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-        <nav class="menu-box">
-          <div class="upper-box">
-            <div class="nav-logo">
-              <a href=""><img src="images/logo.svg" alt="" /></a>
-            </div>
-            <div class="close-btn"><i class="icon fa fa-times"></i></div>
-          </div>
-          <ul class="navigation clearfix">
-            <!--Keep This Empty / Menu will come through Javascript-->
-          </ul>
-          <ul class="contact-list-one">
-            <li>
-              <i class="icon lnr-icon-envelope1"></i>
-              <span class="title">Send Email</span>
-              <div class="text"><a href="mailto:lawson@example.com">alma.lawson@example.com</a></div>
-            </li>
-          </ul>
-          <ul class="social-links">
-            <li><a href="https://x.com/xodosoft" target="_blank" rel="noopener noreferrer" aria-label="X"><svg
-                  class="x-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true">
-                  <path
-                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg></a></li>
-            <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="icon fab fa-pinterest-p"></i></a></li>
-            <li><a href="#"><i class="icon fab fa-vimeo-v"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- End Mobile Menu -->
-
-      <!-- Header Search -->
-      <div class="search-popup">
-        <span class="search-back-drop"></span>
-        <button class="close-search"><span class="fa fa-times"></span></button>
-
-        <div class="search-inner">
-          <form method="post" action="index.html">
-            <div class="form-group">
-              <input type="search" name="search-field" value="" placeholder="Search..." required="" />
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- End Header Search -->
-
-      <!-- Sticky Header  -->
-      <div class="sticky-header">
-        <div class="auto-container">
-          <div class="inner-container">
-            <!--Logo-->
-            <div class="logo">
-              <a href=""><img src="images/logo.svg" alt="XodoSoft" width="180" height="54" /></a>
-            </div>
-
-            <!--Right Col-->
-            <div class="nav-outer">
-              <!-- Main Menu -->
-              <nav class="main-menu">
-                <div class="navbar-collapse show collapse clearfix">
-                  <ul class="navigation clearfix">
-                    <!--Keep This Empty / Menu will come through Javascript-->
-                  </ul>
-                </div>
-              </nav>
-              <!-- Main Menu End-->
-
-              <!--Mobile Navigation Toggler-->
-              <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Sticky Menu -->
-    </header>
-    <!--End Main Header -->
+    <?php $currentPage = 'home'; include 'includes/header.php'; ?>
 
     <div id="smooth-wrapper">
       <div id="smooth-content">
@@ -284,17 +41,17 @@
                   <h1 class="title denge-words" style="font-size: clamp(2.3rem, 3vw, 3.4rem); line-height: 1.1;">
                     Empowering Your Business <br> with Innovative Tech Solutions</h1>
                   <ul class="banner-service-list denge-words">
-                    <li><a href="">Enterprise and Custom Software Development</a></li>
+                    <li><a href="service.php">Enterprise and Custom Software Development</a></li>
                     <li>/</li>
-                    <li><a href="">Business Process Automation</a></li>
+                    <li><a href="service.php">Business Process Automation</a></li>
                     <li>/</li>
-                    <li><a href="">Web and Mobile Application Development</a></li>
+                    <li><a href="service.php">Web and Mobile Application Development</a></li>
                     <li>/</li>
-                    <li><a href="">Systems Integration and API Development</a></li>
+                    <li><a href="service.php">Systems Integration and API Development</a></li>
                     <li>/</li>
-                    <li><a href="">Digital Commerce Solutions</a></li>
+                    <li><a href="service.php">Digital Commerce Solutions</a></li>
                   </ul>
-                  <div class="button-box denge-fade"><a href="" class="theme-btn-three">Get a Free
+                  <div class="button-box denge-fade"><a href="contact.php" class="theme-btn-three">Get a Free
                       Consultation <i class="fa-light fa-arrow-up-right"></i></a></div>
                 </div>
               </div>
@@ -303,10 +60,10 @@
                   <div class="h5 client-title denge-words">We bring your ideas to life with cutting-edge technology,
                     ensuring seamless and effective solutions.</div>
                   <div class="logo-box">
-                    <div class="logo"><a href="index.html"><img src="images/resource/logo1.png" alt=""></a></div>
-                    <div class="logo"><a href="index.html"><img src="images/resource/logo2.png" alt=""></a></div>
-                    <div class="logo"><a href="index.html"><img src="images/resource/logo3.png" alt=""></a></div>
-                    <div class="logo"><a href="index.html"><img src="images/resource/logo4.png" alt=""></a></div>
+                    <div class="logo"><a href="index.php"><img src="images/resource/logo1.png" alt=""></a></div>
+                    <div class="logo"><a href="index.php"><img src="images/resource/logo2.png" alt=""></a></div>
+                    <div class="logo"><a href="index.php"><img src="images/resource/logo3.png" alt=""></a></div>
+                    <div class="logo"><a href="index.php"><img src="images/resource/logo4.png" alt=""></a></div>
                   </div>
                 </div>
                 <div class="style-text denge-chars">Xodo<span>soft</span></div>
@@ -332,7 +89,7 @@
                   <div class="text denge-fade">We create tailored digital solutions that help your brand stand out,
                     connect with audiences, and drive measurable growth. Our expertise delivers exceptional business
                     results.</div>
-                  <a href="about.html" class="theme-btn-one denge-fade">More About <i
+                  <a href="about.php" class="theme-btn-one denge-fade">More About <i
                       class="fa-light fa-arrow-up-right"></i></a>
                 </div>
               </div>
@@ -377,11 +134,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-1.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Enterprise and Custom Software
+                      <div class="h4 title"><a href="service.php">Enterprise and Custom Software
                           Development</a></div>
                       <div class="text">XodoSoft develops custom enterprise software, business applications, management
                         platforms and digital systems designed around your operational requirements.</div>
-                      <a href="page-service-details.html" class="service-button-one">Read More <i
+                      <a href="service.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -391,10 +148,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-2.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Business Process Automation</a></div>
+                      <div class="h4 title"><a href="service.php">Business Process Automation</a></div>
                       <div class="text">Automate workflows, approvals, repetitive tasks and business processes with
                         XodoSoft business process automation solutions.</div>
-                      <a href="page-service-details.html" class="service-button-one">Read More <i
+                      <a href="service.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -404,11 +161,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-3.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Web and Mobile Application
+                      <div class="h4 title"><a href="service.php">Web and Mobile Application
                           Development</a></div>
                       <div class="text">XodoSoft develops responsive web applications, business portals and mobile apps
                         designed for performance, usability and business requirements.</div>
-                      <a href="page-service-details.html" class="service-button-one">Read More <i
+                      <a href="service.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -418,11 +175,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-4.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Systems Integration and API
+                      <div class="h4 title"><a href="service.php">Systems Integration and API
                           Development</a></div>
                       <div class="text">Connect business applications, databases and digital platforms with XodoSoft
                         system integration and API development services.</div>
-                      <a href="page-service-details.html" class="service-button-one">Read More <i
+                      <a href="service.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -432,10 +189,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-5.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Digital Commerce Solutions</a></div>
+                      <div class="h4 title"><a href="service.php">Digital Commerce Solutions</a></div>
                       <div class="text">Build scalable e-commerce platforms, Shopify stores and connected digital
                         commerce experiences with XodoSoft.</div>
-                      <a href="page-service-details.html" class="service-button-one">Read More <i
+                      <a href="service.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -444,7 +201,7 @@
                   <div class="service-contect-box">
                     <div class="text">We create customized digital strategies that audiences, and achieve measurable
                       growth. Our exceptional business results.</div>
-                    <a href="page-service-details.html" class="theme-btn-one">View All Services <i
+                    <a href="service.php" class="theme-btn-one">View All Services <i
                         class="fa-light fa-arrow-up-right"></i></a>
                   </div>
                 </div>
@@ -465,7 +222,7 @@
                   <div class="col-xxl-3 offset-xxl-3 col-xl-4 offset-xl-2">
                     <div class="button-box">
                       <div class="text2 denge-words">12+ years of impact!</div>
-                      <a href="page-projects.html" class="theme-btn-one denge-fade">View All Portfolio <i
+                      <a href="product.php" class="theme-btn-one denge-fade">View All Portfolio <i
                           class="fa-light fa-arrow-up-right"></i></a>
                     </div>
                   </div>
@@ -475,12 +232,12 @@
                 <div class="col-lg-6">
                   <div class="project-block denge-fade">
                     <div class="inner-block">
-                      <div class="icon"><a href="page-project-details.html"><i
+                      <div class="icon"><a href="product.php"><i
                             class="fa-light fa-arrow-up-right"></i></a></div>
-                      <div class="image"><a href="page-project-details.html"><img src="images/resource/project1-1.jpg"
+                      <div class="image"><a href="product.php"><img src="images/resource/project1-1.jpg"
                             alt=""><img src="images/resource/project1-1.jpg" alt=""></a></div>
                       <div class="content">
-                        <div class="h5 title"><a href="page-project-details.html">Brand Guidelines</a></div>
+                        <div class="h5 title"><a href="product.php">Brand Guidelines</a></div>
                         <div class="post-meta"><span class="date">2025</span><span class="category">Branding</span>
                         </div>
                       </div>
@@ -490,12 +247,12 @@
                 <div class="col-lg-6">
                   <div class="project-block denge-fade">
                     <div class="inner-block">
-                      <div class="icon"><a href="page-project-details.html"><i
+                      <div class="icon"><a href="product.php"><i
                             class="fa-light fa-arrow-up-right"></i></a></div>
-                      <div class="image"><a href="page-project-details.html"><img src="images/resource/project1-2.jpg"
+                      <div class="image"><a href="product.php"><img src="images/resource/project1-2.jpg"
                             alt=""><img src="images/resource/project1-2.jpg" alt=""></a></div>
                       <div class="content">
-                        <div class="h5 title"><a href="page-project-details.html">Content Strategy</a></div>
+                        <div class="h5 title"><a href="product.php">Content Strategy</a></div>
                         <div class="post-meta"><span class="date">2025</span><span class="category">Branding</span>
                         </div>
                       </div>
@@ -505,12 +262,12 @@
                 <div class="col-lg-6">
                   <div class="project-block denge-fade">
                     <div class="inner-block">
-                      <div class="icon"><a href="page-project-details.html"><i
+                      <div class="icon"><a href="product.php"><i
                             class="fa-light fa-arrow-up-right"></i></a></div>
-                      <div class="image"><a href="page-project-details.html"><img src="images/resource/project1-3.jpg"
+                      <div class="image"><a href="product.php"><img src="images/resource/project1-3.jpg"
                             alt=""><img src="images/resource/project1-3.jpg" alt=""></a></div>
                       <div class="content">
-                        <div class="h5 title"><a href="page-project-details.html">Social Media Campaign</a></div>
+                        <div class="h5 title"><a href="product.php">Social Media Campaign</a></div>
                         <div class="post-meta"><span class="date">2025</span><span class="category">Branding</span>
                         </div>
                       </div>
@@ -520,12 +277,12 @@
                 <div class="col-lg-6">
                   <div class="project-block denge-fade">
                     <div class="inner-block">
-                      <div class="icon"><a href="page-project-details.html"><i
+                      <div class="icon"><a href="product.php"><i
                             class="fa-light fa-arrow-up-right"></i></a></div>
-                      <div class="image"><a href="page-project-details.html"><img src="images/resource/project1-4.jpg"
+                      <div class="image"><a href="product.php"><img src="images/resource/project1-4.jpg"
                             alt=""><img src="images/resource/project1-4.jpg" alt=""></a></div>
                       <div class="content">
-                        <div class="h5 title"><a href="page-project-details.html">Design Dock</a></div>
+                        <div class="h5 title"><a href="product.php">Design Dock</a></div>
                         <div class="post-meta"><span class="date">2025</span><span class="category">Branding</span>
                         </div>
                       </div>
@@ -551,7 +308,7 @@
                     </div>
                     <div class="icon"><img src="images/icons/service-icon7-1.png" alt="icon"></div>
                     <div class="content">
-                      <div class="h4 title"><a href="page-service-details.html">User-Cantered Design</a></div>
+                      <div class="h4 title"><a href="service.php">User-Cantered Design</a></div>
                       <div class="text">Users are involved from the very start and throughout the entire design and
                         development cycle own goals, contexts</div>
                     </div>
@@ -566,7 +323,7 @@
                     </div>
                     <div class="icon"><img src="images/icons/service-icon8-1.png" alt="icon"></div>
                     <div class="content">
-                      <div class="h4 title"><a href="page-service-details.html">Transparent Process</a></div>
+                      <div class="h4 title"><a href="service.php">Transparent Process</a></div>
                       <div class="text">We provide secure IT solutions with advanced safeguard your data, ensuring
                         reliability and peace of mind.</div>
                     </div>
@@ -580,7 +337,7 @@
                       <div class="image"><img src="images/resource/service4-1.jpg" alt="mask image"></div>
                     </div>
                     <div class="icon"><img src="images/icons/service-icon4-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="page-service-details.html">Customized Solutions</a></div>
+                    <div class="h4 title"><a href="service.php">Customized Solutions</a></div>
                     <div class="text">Every business is unique, & so are our solutions. We tailor IT services to match
                       specific requirements & goals.</div>
                   </div>
@@ -591,7 +348,7 @@
                   <div class="inner-block">
                     <div class="image"><img src="images/resource/service3-1.jpg" alt="mask image"></div>
                     <div class="icon"><img src="images/icons/service-icon3-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="page-service-details.html">Strategic Creativity</a></div>
+                    <div class="h4 title"><a href="service.php">Strategic Creativity</a></div>
                     <div class="text">Our dedicated support team is available around the clock to resolve issues quickly
                       business running smoothly.</div>
                   </div>
@@ -604,7 +361,7 @@
                       <div class="image"><img src="images/resource/service5-1.jpg" alt="mask image"></div>
                     </div>
                     <div class="icon"><img src="images/icons/service-icon5-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="page-service-details.html">Ongoing Support</a></div>
+                    <div class="h4 title"><a href="service.php">Ongoing Support</a></div>
                     <div class="text">We design and deliver solutions that evolve with technology, preparing your
                       business long-term success.</div>
                   </div>
@@ -1020,7 +777,7 @@
                 <div class="col-lg-5">
                   <div class="text">Discover the latest trends, insights, and creative ideas shaping the future of
                     digital transformation and innovation.</div>
-                  <a href="blog-grid.html" class="theme-btn-one">See All Blog <i
+                  <a href="blogs.php" class="theme-btn-one">See All Blog <i
                       class="fa-light fa-arrow-up-right"></i></a>
                 </div>
               </div>
@@ -1029,14 +786,14 @@
               <div class="col-xxl-4 col-lg-6">
                 <div class="blog-block denge-fade">
                   <div class="inner-block">
-                    <div class="image"><a href="news-details.html"><img src="images/resource/blog1-1.jpg" alt=""><img
+                    <div class="image"><a href="blog.php"><img src="images/resource/blog1-1.jpg" alt=""><img
                           src="images/resource/blog1-1.jpg" alt=""></a></div>
                     <div class="content">
                       <div class="inner">
                         <div class="post-meta"><span class="date">June 29, 2026</span></div>
-                        <div class="h4 title"><a href="news-details.html">Why Every Business Needs Strong Online
+                        <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online
                             Presence</a></div>
-                        <a href="news-details.html" class="read-more">Read More</a>
+                        <a href="blog.php" class="read-more">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -1045,14 +802,14 @@
               <div class="col-xxl-4 col-lg-6">
                 <div class="blog-block denge-fade">
                   <div class="inner-block">
-                    <div class="image"><a href="news-details.html"><img src="images/resource/blog1-2.jpg" alt=""><img
+                    <div class="image"><a href="blog.php"><img src="images/resource/blog1-2.jpg" alt=""><img
                           src="images/resource/blog1-2.jpg" alt=""></a></div>
                     <div class="content">
                       <div class="inner">
                         <div class="post-meta"><span class="date">June 29, 2026</span></div>
-                        <div class="h4 title"><a href="news-details.html">Why Every Business Needs Strong Online
+                        <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online
                             Presence</a></div>
-                        <a href="news-details.html" class="read-more">Read More</a>
+                        <a href="blog.php" class="read-more">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -1061,14 +818,14 @@
               <div class="col-xxl-4 col-lg-6">
                 <div class="blog-block denge-fade">
                   <div class="inner-block">
-                    <div class="image"><a href="news-details.html"><img src="images/resource/blog1-3.jpg" alt=""><img
+                    <div class="image"><a href="blog.php"><img src="images/resource/blog1-3.jpg" alt=""><img
                           src="images/resource/blog1-3.jpg" alt=""></a></div>
                     <div class="content">
                       <div class="inner">
                         <div class="post-meta"><span class="date">June 29, 2026</span></div>
-                        <div class="h4 title"><a href="news-details.html">Why Every Business Needs Strong Online
+                        <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online
                             Presence</a></div>
-                        <a href="news-details.html" class="read-more">Read More</a>
+                        <a href="blog.php" class="read-more">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -1125,91 +882,7 @@
         </section>
         <!--End Contact -->
 
-        <!-- Footer Section Start -->
-        <footer class="footer-section fix bg-cover" style="background-image: url('images/icons/footer-line.png');">
-          <div class="container">
-            <div class="footer-top-wrapper">
-              <a href="" class="footer-logo wow fadeInUp" data-wow-delay=".3s"><img src="images/logo.svg"
-                  alt="img" width="180" height="54"></a>
-              <div class="lets-talk-content wow fadeInUp" data-wow-delay=".5s">
-                <div class="h2 title">
-                  Let’s Talk <a href="page-contact.html" class="arrow-icon"><i
-                      class="fa-regular fa-arrow-up-right"></i></a>
-                  <span>Work Together</span>
-                </div>
-              </div>
-            </div>
-            <div class="footer-widget-wrapper">
-              <div class="footer-vec d-none d-xxl-block"><img src="images/icons/footer-vec.png" alt="img"
-                  class="animation__rotateY"></div>
-              <div class="row g-4 justify-content-between align-items-start align-items-xl-end">
-                <div class="col-xl-5 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div class="footer-contact-items">
-                    <p><a href="mailto:contact@xodosoft.com">contact@xodosoft.com</a></p>
-                    <div class="h4 call-title"><a href="tel:+922135305947">021-35305947</a></div>
-                    <div class="social-icon">
-                      <a href="https://www.facebook.com/people/Xodosoft-SMC-Private-Limited/61576297983139/"
-                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="https://x.com/xodosoft" target="_blank" rel="noopener noreferrer" aria-label="X"><svg
-                          class="x-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"
-                          aria-hidden="true">
-                          <path
-                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                        </svg></a>
-                      <a href="https://www.linkedin.com/company/xodosoft/" target="_blank" rel="noopener noreferrer"><i
-                          class="fa-brands fa-linkedin-in"></i></a>
-                      <a href="https://www.instagram.com/xodosoft/" target="_blank" rel="noopener noreferrer"><i
-                          class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="h5 get-title">Get the latest inspiration & insights</div>
-                    <form action="#">
-                      <input type="text" name="email" id="email2" placeholder="Enter your email">
-                      <button type="submit"><i class="fa-sharp fa-regular fa-paper-plane"></i></button>
-                    </form>
-                  </div>
-                </div>
-                <div class="col-xl-1 d-none d-xl-block"></div>
-                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                  <div class="footer-list-area">
-                    <div class="footer-widget-items">
-                      <div class="widget-title mb-25">
-                        <div class="h4 font-size-24 text-white font-weight-500">Quick Link</div>
-                      </div>
-                      <ul class="user-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="page-services.html">Services</a></li>
-                        <li><a href="page-projects.html">Products</a></li>
-                        <li><a href="page-contact.html">Contact Us</a></li>
-                      </ul>
-                    </div>
-                    <div class="footer-widget-items">
-                      <div class="widget-title mb-25">
-                        <div class="h4 font-size-24 text-white font-weight-500">Our Solutions</div>
-                      </div>
-                      <ul class="user-links">
-                        <li><a href="page-service-details.html">Enterprise and Custom Software Development</a></li>
-                        <li><a href="page-service-details.html">Business Process Automation</a></li>
-                        <li><a href="page-service-details.html">Web and Mobile Application Development</a></li>
-                        <li><a href="page-service-details.html">Systems Integration and API Development</a></li>
-                        <li><a href="page-service-details.html">Digital Commerce Solutions</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-bottom">
-              <p>© Copyright <span class="current-year">2025</span> by <a href="https://xodosoft.com" target="_blank"
-                  rel="noopener noreferrer">Xodosoft.com</a></p>
-              <ul class="footer-menu">
-                <li><a href="page-contact.html">Terms & Condition</a></li>
-                <li><a href="page-contact.html">Privacy Policy</a></li>
-                <li><a href="page-contact.html">Contact us</a></li>
-              </ul>
-            </div>
-          </div>
-        </footer>
+        <?php include 'includes/footer.php'; ?>
       </div>
     </div>
 
@@ -1235,35 +908,7 @@
   <script src="js/gsap-scroll-to-plugin.js"></script>
   <script src="js/SplitText.min.js"></script>
   <script src="js/script.js"></script>
-  <script>
-    /* 03 - FAQ: stop the page jumping to the top when an answer opens/closes.
-       Opening an answer changes the page height. ScrollSmoother (v3.11.4) then runs
-       its own internal refresh, which loses the scroll position and slides the page
-       back from the top (hero). Route that refresh through the global
-       ScrollTrigger.refresh(), which keeps the current scroll position. */
-    (function () {
-      function patchSmoother() {
-        var sm = window.ScrollSmoother && ScrollSmoother.get();
-        if (!sm || !window.ScrollTrigger) return false;
-        if (!sm.__xodoPatched) {
-          sm.refresh = function () { ScrollTrigger.refresh(); };
-          sm.__xodoPatched = true;
-        }
-        return true;
-      }
-      if (!patchSmoother()) {
-        document.addEventListener('DOMContentLoaded', patchSmoother);
-        window.addEventListener('load', patchSmoother);
-      }
-    })();
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const yearNode = document.querySelector('.current-year');
-      if (yearNode) {
-        yearNode.textContent = new Date().getFullYear();
-      }
-    });
-  </script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>

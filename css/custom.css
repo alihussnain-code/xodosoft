@@ -1,0 +1,92 @@
+/* =========================================================
+   XodoSoft custom styles (loaded after css/style.css on every page)
+   ========================================================= */
+
+/* 01 - Sticky header logo: give it a real size so it never collapses */
+.sticky-header .logo {
+  flex-shrink: 0;
+}
+
+.sticky-header .logo img {
+  width: 180px;
+  height: 54px;
+  max-width: none;
+  max-height: none;
+}
+
+/* Header dropdown (Services): wide enough to keep each service on one line */
+@media (min-width: 1200px) {
+  .main-menu .navigation>li>ul {
+    width: max-content;
+    min-width: 228px;
+  }
+
+  .main-menu .navigation>li>ul>li>a {
+    white-space: nowrap;
+  }
+
+  /* sticky bar menu sits near the right edge - open its dropdowns leftwards so they stay on screen */
+  .sticky-header .main-menu .navigation>li>ul {
+    left: auto;
+    right: 0;
+  }
+}
+
+/* 02 - Services: equal-height cards, "Read More" aligned at the bottom */
+.services-section .row>[class*="col-"]:has(> .service-block) {
+  display: flex;
+}
+
+.services-section .service-block {
+  display: flex;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.services-section .service-block .inner-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.services-section .service-block .service-button-one {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* 04 - X (Twitter) icon */
+.x-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+/* 05 - Footer: proper spacing between Quick Link and Our Solutions */
+.footer-widget-wrapper .footer-list-area {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer-widget-wrapper .footer-list-area .footer-widget-items:first-child {
+  flex-shrink: 0;
+}
+
+.footer-widget-wrapper .footer-list-area .widget-title .h4 {
+  white-space: nowrap;
+}
+
+/* the rotating circle (footer-vec) only shows on xxl screens - keep Quick Link clear of it */
+@media (min-width: 1400px) {
+  .footer-widget-wrapper .footer-list-area {
+    padding-left: 70px;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .footer-widget-wrapper .footer-list-area {
+    display: block;
+  }
+}
