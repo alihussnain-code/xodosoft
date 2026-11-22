@@ -8,6 +8,7 @@
  * $currentPage: home | about | service | product | blogs | contact
  */
 $currentPage = isset($currentPage) ? $currentPage : '';
+include_once __DIR__ . '/services.php';
 
 if (!function_exists('xodo_nav_class')) {
   function xodo_nav_class($page, $currentPage, $extra = '')
@@ -51,13 +52,11 @@ if (!function_exists('xodo_nav_class')) {
                     <a href="about.php">About</a>
                   </li>
                   <li<?php echo xodo_nav_class('service', $currentPage, 'dropdown'); ?>>
-                    <a href="service.php">Services</a>
+                    <a href="<?php echo $xodoServicesHome; ?>">Services</a>
                     <ul>
-                      <li><a href="service.php">Enterprise and Custom Software Development</a></li>
-                      <li><a href="service.php">Business Process Automation</a></li>
-                      <li><a href="service.php">Web and Mobile Application Development</a></li>
-                      <li><a href="service.php">Systems Integration and API Development</a></li>
-                      <li><a href="service.php">Digital Commerce Solutions</a></li>
+                      <?php foreach ($xodoServices as $serviceFile => $serviceTitle) : ?>
+                      <li><a href="<?php echo $serviceFile; ?>"><?php echo $serviceTitle; ?></a></li>
+                      <?php endforeach; ?>
                     </ul>
                   </li>
                   <li<?php echo xodo_nav_class('product', $currentPage, 'dropdown'); ?>>

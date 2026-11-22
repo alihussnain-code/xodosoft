@@ -6,10 +6,11 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/theme.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,10 +33,10 @@
         <div class="bg bg-video"><video autoplay muted loop playsinline><source src="images/resource/bg-video1.mp4" type="video/mp4"></video></div>
         <div class="container">
           <div class="title-outer text-center">
-            <h1 class="title">News Grid</h1>
+            <h1 class="title">Blogs</h1>
             <ul class="page-breadcrumb">
               <li><a href="index.php">Home</a></li>
-              <li>News</li>
+              <li>Blogs</li>
             </ul>
           </div>
         </div>
@@ -46,6 +47,48 @@
       <section class="blog-section denge-fade pb-90">
         <div class="container">
           <div class="row g-24">
+            <div class="col-xxl-4 col-lg-6">
+              <div class="blog-block denge-fade">
+                <div class="inner-block">
+                  <div class="image"><a href="blog.php"><img src="images/resource/blog1-1.jpg" alt=""><img src="images/resource/blog1-1.jpg" alt=""></a></div>
+                  <div class="content">
+                    <div class="inner">
+                      <div class="post-meta"><span class="date">June 29, 2026</span></div>
+                      <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online Presence</a></div>
+                      <a href="blog.php" class="read-more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6">
+              <div class="blog-block denge-fade">
+                <div class="inner-block">
+                  <div class="image"><a href="blog.php"><img src="images/resource/blog1-2.jpg" alt=""><img src="images/resource/blog1-2.jpg" alt=""></a></div>
+                  <div class="content">
+                    <div class="inner">
+                      <div class="post-meta"><span class="date">June 29, 2026</span></div>
+                      <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online Presence</a></div>
+                      <a href="blog.php" class="read-more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-lg-6">
+              <div class="blog-block denge-fade">
+                <div class="inner-block">
+                  <div class="image"><a href="blog.php"><img src="images/resource/blog1-3.jpg" alt=""><img src="images/resource/blog1-3.jpg" alt=""></a></div>
+                  <div class="content">
+                    <div class="inner">
+                      <div class="post-meta"><span class="date">June 29, 2026</span></div>
+                      <div class="h4 title"><a href="blog.php">Why Every Business Needs Strong Online Presence</a></div>
+                      <a href="blog.php" class="read-more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="col-xxl-4 col-lg-6">
               <div class="blog-block denge-fade">
                 <div class="inner-block">

@@ -8,6 +8,7 @@
  * $footerClass: optional extra classes for the <footer> element (e.g. 'mt-0').
  */
 $footerClass = isset($footerClass) ? trim($footerClass) : '';
+include_once __DIR__ . '/services.php';
 ?>
         <!-- Footer Section Start -->
         <footer class="footer-section fix bg-cover<?php echo $footerClass !== '' ? ' ' . htmlspecialchars($footerClass) : ''; ?>" style="background-image: url('images/icons/footer-line.png');">
@@ -62,7 +63,7 @@ $footerClass = isset($footerClass) ? trim($footerClass) : '';
                       <ul class="user-links">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="about.php">About</a></li>
-                        <li><a href="service.php">Services</a></li>
+                        <li><a href="<?php echo $xodoServicesHome; ?>">Services</a></li>
                         <li><a href="product.php">Products</a></li>
                         <li><a href="contact.php">Contact Us</a></li>
                       </ul>
@@ -72,11 +73,9 @@ $footerClass = isset($footerClass) ? trim($footerClass) : '';
                         <div class="h4 font-size-24 text-white font-weight-500">Our Solutions</div>
                       </div>
                       <ul class="user-links">
-                        <li><a href="service.php">Enterprise and Custom Software Development</a></li>
-                        <li><a href="service.php">Business Process Automation</a></li>
-                        <li><a href="service.php">Web and Mobile Application Development</a></li>
-                        <li><a href="service.php">Systems Integration and API Development</a></li>
-                        <li><a href="service.php">Digital Commerce Solutions</a></li>
+                        <?php foreach ($xodoServices as $serviceFile => $serviceTitle) : ?>
+                        <li><a href="<?php echo $serviceFile; ?>"><?php echo $serviceTitle; ?></a></li>
+                        <?php endforeach; ?>
                       </ul>
                     </div>
                   </div>

@@ -6,10 +6,11 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/theme.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -50,7 +51,7 @@
               <div class="inner-column">
                 <div class="shape2 bounce-x"><img src="images/icons/shape14.png" alt=""></div>
                 <div class="sec-title">
-                  <div class="sub-title denge-words">Conpany About Us</div>
+                  <div class="sub-title denge-words">Company About Us</div>
                 </div>
                 <div class="image-box">
                   <div class="image1 img-reveal"><img src="images/resource/about3-1.png" alt=""></div>
@@ -61,7 +62,7 @@
             <div class="col-xl-6 offset-xl-1">
               <div class="content-column">
                 <div class="inner-column denge-fade">
-                  <h2 class="title2 text-reveal-anim">A Results-Driven Digital Agency Focused on Strategy, Creativity, and Performance</h2>
+                  <h2 class="title2 text-reveal-anim">Transforming Ideas into Scalable Digital Solutions for Growing Businesses</h2>
                   <div class="bottom-box">
                     <div class="funfact-box">
                       <div class="inner-box">
@@ -71,8 +72,8 @@
                       </div>
                     </div>
                     <div class="content-box">
-                      <div class="text">We create tailored digital solutions that help your brand stand out, connect with audiences, and drive measurable growth. Our expertise delivers exceptional business results.</div>
-                      <a href="about.php" class="theme-btn-one">About Us <i class="fa-light fa-arrow-up-right"></i></a>
+                      <div class="text">XodoSoft is a Karachi-based software company helping businesses move forward with confidence. We build enterprise software, business automation, web and mobile apps, system integrations and digital commerce platforms, along with ready-made products like our Retail POS ERP and Textile ERP.</div>
+                      <a href="enterprise-software-development.php" class="theme-btn-one">Our Services <i class="fa-light fa-arrow-up-right"></i></a>
                     </div>
                   </div>
                 </div>
@@ -83,180 +84,131 @@
       </section>
       <!-- About Section -->
 
-      <!-- Team Section -->
-      <section class="team-section">
-        <div class="container">
-          <div class="sec-title-h2 text-center">
-            <div class="sub-title denge-words">OUR TEAM</div>
-            <h2 class="title text-reveal-anim">Creative Professionals Behind Every <br>Success Story</h2>
-          </div>
-          <div class="row">
-            <div class="col-xxl-3 col-lg-4 col-md-6">
-              <div class="team-block">
-                <div class="inner-block">
-                  <div class="image-box">
-                    <a href="about.php">
-                      <img src="images/resource/team1-1.jpg" alt="">
-                      <img src="images/resource/team1-1.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="content-box">
-                    <div class="info">
-                      <div class="h5 title"><a href="about.php">Eleanor Pena</a></div>
-                      <div class="designation">Postman</div>
-                    </div>
-                    <ul class="social-icon">
-                     <li><a href="index.php"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                     <li><a href="index.php"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-lg-4 col-md-6">
-              <div class="team-block">
-                <div class="inner-block">
-                  <div class="image-box">
-                    <a href="about.php">
-                      <img src="images/resource/team1-2.jpg" alt="">
-                      <img src="images/resource/team1-2.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="content-box">
-                    <div class="info">
-                      <div class="h5 title"><a href="about.php">Marvin McKinney</a></div>
-                      <div class="designation">Violinist</div>
-                    </div>
-                    <ul class="social-icon">
-                     <li><a href="index.php"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                     <li><a href="index.php"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-lg-4 col-md-6">
-              <div class="team-block">
-                <div class="inner-block">
-                  <div class="image-box">
-                    <a href="about.php">
-                      <img src="images/resource/team1-3.jpg" alt="">
-                      <img src="images/resource/team1-3.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="content-box">
-                    <div class="info">
-                      <div class="h5 title"><a href="about.php">Brooklyn Simmons</a></div>
-                      <div class="designation">Garketing director</div>
-                    </div>
-                    <ul class="social-icon">
-                     <li><a href="index.php"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                     <li><a href="index.php"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-3 col-lg-4 col-md-6">
-              <div class="team-block">
-                <div class="inner-block">
-                  <div class="image-box">
-                    <a href="about.php">
-                      <img src="images/resource/team1-4.jpg" alt="">
-                      <img src="images/resource/team1-4.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="content-box">
-                    <div class="info">
-                      <div class="h5 title"><a href="about.php">Cody Fisher</a></div>
-                      <div class="designation">Economist</div>
-                    </div>
-                    <ul class="social-icon">
-                     <li><a href="index.php"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                     <li><a href="index.php"><i class="fa-brands fa-twitter"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Team Section -->
-
-      <!-- award Section Start -->
-      <section class="award-section p-0">
+      <!-- Vision & Mission Section -->
+      <section class="about-vm-section denge-fade">
         <div class="container">
           <div class="sec-title">
-            <div class="h2 title text-reveal-anim">Our Milestones in Digital <br>Excellence.</div>
-            <div class="h5 year denge-words">//2016 -2025</div>
-          </div>
-          <div class="row">
-            <div class="col-xl-4">
-              <div class="image-box">
-                <div class="image"><img src="images/resource/award1-1.png" alt=""></div>
+            <div class="row">
+              <div class="col-xxl-8 col-xl-7 col-lg-6">
+                <div class="sub-title denge-words">Vision &amp; Mission</div>
+              </div>
+              <div class="col-xxl-4 col-xl-5 col-lg-6">
+                <div class="h2 title text-reveal-anim">What Drives XodoSoft Forward</div>
               </div>
             </div>
-            <div class="col-xl-8">
-              <div class="award-block">
-                <div class="title-box">
-                  <div class="number">i</div>
-                  <div class="h4 title">Development and UI/UX solutions</div>
-                </div>
-                <div class="award-box">
-                  <div class="year-box"><span class="year-text">X</span> <span class="year-number"></span>25</div>
-                  <div class="image"><img src="images/icons/award-icon1.png" alt=""></div>
+          </div>
+          <div class="row g-24">
+            <div class="col-lg-6">
+              <div class="vm-card denge-fade">
+                <div class="vm-label">01 / Vision</div>
+                <div class="h3 title">Our Vision</div>
+                <div class="text">To become a trusted global name in innovative software, helping businesses thrive in a fast-changing digital world.</div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="vm-card denge-fade">
+                <div class="vm-label">02 / Mission</div>
+                <div class="h3 title">Our Mission</div>
+                <div class="text">To deliver scalable software and digital experiences that help organisations work with more agility, efficiency and insight, backed by continuous innovation and investment in people and technology.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Vision & Mission Section -->
+
+      <!-- Core Values Section -->
+      <section class="services-section about-values-section denge-fade">
+        <div class="container">
+          <div class="sec-title">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-7 col-lg-6">
+                <div class="sub-title denge-words">Our Core Values</div>
+              </div>
+              <div class="col-xxl-4 col-xl-5 col-lg-6">
+                <div class="h2 title text-reveal-anim">Six Principles Behind Everything We Build</div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-24">
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon1-1.png" alt=""></div>
+                  <div class="h4 title">Boundless Innovation</div>
+                  <div class="text">We keep asking what is possible and use technology to shape better ways of working.</div>
                 </div>
               </div>
-              <div class="award-block">
-                <div class="title-box">
-                  <div class="number">II</div>
-                  <div class="h4 title">Development and UI/UX solutions</div>
-                </div>
-                <div class="award-box">
-                  <div class="year-box"><span class="year-text">X</span> <span class="year-number"></span>15</div>
-                  <div class="image"><img src="images/icons/award-icon2.png" alt=""></div>
-                </div>
-              </div>
-              <div class="award-block">
-                <div class="title-box">
-                  <div class="number">III</div>
-                  <div class="h4 title">Development and UI/UX solutions</div>
-                </div>
-                <div class="award-box">
-                  <div class="year-box"><span class="year-text">X</span> <span class="year-number"></span>32</div>
-                  <div class="image"><img src="images/icons/award-icon3.png" alt=""></div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon1-2.png" alt=""></div>
+                  <div class="h4 title">Relentless Customer Focus</div>
+                  <div class="text">Every solution starts by listening to you and understanding your business, so the results are measurable.</div>
                 </div>
               </div>
-              <div class="award-block">
-                <div class="title-box">
-                  <div class="number">IV</div>
-                  <div class="h4 title">Development and UI/UX solutions</div>
-                </div>
-                <div class="award-box">
-                  <div class="year-box"><span class="year-text">X</span> <span class="year-number"></span>16</div>
-                  <div class="image"><img src="images/icons/award-icon4.png" alt=""></div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon1-3.png" alt=""></div>
+                  <div class="h4 title">Integrity at Every Step</div>
+                  <div class="text">We work with honesty, transparency and high ethical standards, so you can trust every decision we make.</div>
                 </div>
               </div>
-              <div class="award-block">
-                <div class="title-box">
-                  <div class="number">V</div>
-                  <div class="h4 title">Development and UI/UX solutions</div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon1-4.png" alt=""></div>
+                  <div class="h4 title">Engineering with Purpose</div>
+                  <div class="text">Our code exists to bring clarity, performance and real transformation to your business.</div>
                 </div>
-                <div class="award-box">
-                  <div class="year-box"><span class="year-text">X</span> <span class="year-number"></span>15</div>
-                  <div class="image"><img src="images/icons/award-icon5.png" alt=""></div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon1-5.png" alt=""></div>
+                  <div class="h4 title">Empowering Collaboration</div>
+                  <div class="text">We share knowledge openly with our clients and each other to build smarter, faster results together.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="service-block denge-fade">
+                <div class="inner-block">
+                  <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
+                  <div class="icon"><img src="images/icons/service-icon6-1.png" alt=""></div>
+                  <div class="h4 title">Excellence as a Standard</div>
+                  <div class="text">From the user interface to the infrastructure behind it, we hold every detail to a high standard.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!--End award -->
+      <!-- Core Values Section -->
 
-      <!-- Services Section -->
+      <!-- Why Choose Us Section -->
       <section class="services-section-three denge-fade">
         <div class="container">
+          <div class="sec-title">
+            <div class="row">
+              <div class="col-xxl-8 col-xl-7 col-lg-6">
+                <div class="sub-title denge-words">Why Choose XodoSoft</div>
+              </div>
+              <div class="col-xxl-4 col-xl-5 col-lg-6">
+                <div class="h2 title text-reveal-anim">A Technology Partner Focused on Your Growth</div>
+              </div>
+            </div>
+          </div>
           <div class="row g-24">
             <div class="col-xl-8">
               <div class="service-block-seven denge-fade">
@@ -266,8 +218,8 @@
                   </div>
                   <div class="icon"><img src="images/icons/service-icon7-1.png" alt="icon"></div>
                   <div class="content">
-                    <div class="h4 title"><a href="service.php">User-Cantered Design</a></div>
-                    <div class="text">Users are involved from the very start and throughout the entire design and development cycle own goals, contexts</div>
+                    <div class="h4 title"><a href="enterprise-software-development.php">Deep Industry Focus</a></div>
+                    <div class="text">From textile ERP to retail and restaurant POS, we build platforms around the real challenges of each industry we serve.</div>
                   </div>
                 </div>
               </div>
@@ -280,8 +232,8 @@
                   </div>
                   <div class="icon"><img src="images/icons/service-icon8-1.png" alt="icon"></div>
                   <div class="content">
-                    <div class="h4 title"><a href="service.php">Transparent Process</a></div>
-                    <div class="text">We provide secure IT solutions with advanced safeguard your data, ensuring reliability and peace of mind.</div>
+                    <div class="h4 title"><a href="enterprise-software-development.php">End-to-End Expertise</a></div>
+                    <div class="text">Enterprise software, mobile apps, e-commerce and UI/UX design, all delivered by one team under one roof.</div>
                   </div>
                 </div>
               </div>
@@ -293,8 +245,8 @@
                     <div class="image"><img src="images/resource/service4-1.jpg" alt="mask image"></div>
                   </div>
                   <div class="icon"><img src="images/icons/service-icon4-1.png" alt="icon"></div>
-                  <div class="h4 title"><a href="service.php">Customized Solutions</a></div>
-                  <div class="text">Every business is unique, & so are our solutions. We tailor IT services to match specific requirements & goals.</div>
+                  <div class="h4 title"><a href="enterprise-software-development.php">Cloud-First Performance</a></div>
+                  <div class="text">Cloud-optimised platforms built for speed, security and real-time business insight.</div>
                 </div>
               </div>
             </div>
@@ -303,8 +255,8 @@
                 <div class="inner-block">
                   <div class="image"><img src="images/resource/service3-1.jpg" alt="mask image"></div>
                   <div class="icon"><img src="images/icons/service-icon3-1.png" alt="icon"></div>
-                  <div class="h4 title"><a href="service.php">Strategic Creativity</a></div>
-                  <div class="text">Our dedicated support team is available around the clock to resolve issues quickly business running smoothly.</div>
+                  <div class="h4 title"><a href="product.php">Ready-Made Products</a></div>
+                  <div class="text">Proven products like our Retail POS ERP and Textile ERP, ready to configure for your business.</div>
                 </div>
               </div>
             </div>
@@ -315,15 +267,15 @@
                     <div class="image"><img src="images/resource/service5-1.jpg" alt="mask image"></div>
                   </div>
                   <div class="icon"><img src="images/icons/service-icon5-1.png" alt="icon"></div>
-                  <div class="h4 title"><a href="service.php">Ongoing Support</a></div>
-                  <div class="text">We design and deliver solutions that evolve with technology, preparing your business long-term success.</div>
+                  <div class="h4 title"><a href="contact.php">A Partner You Can Trust</a></div>
+                  <div class="text">Dedicated support, smooth integrations and a long-term focus on your growth, well after launch.</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Services Section -->
+      <!-- Why Choose Us Section -->
 
         <?php include 'includes/footer.php'; ?>
     </div>

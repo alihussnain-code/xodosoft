@@ -7,11 +7,12 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/theme.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,15 +42,15 @@
                   <h1 class="title denge-words" style="font-size: clamp(2.3rem, 3vw, 3.4rem); line-height: 1.1;">
                     Empowering Your Business <br> with Innovative Tech Solutions</h1>
                   <ul class="banner-service-list denge-words">
-                    <li><a href="service.php">Enterprise and Custom Software Development</a></li>
+                    <li><a href="enterprise-software-development.php">Enterprise and Custom Software Development</a></li>
                     <li>/</li>
-                    <li><a href="service.php">Business Process Automation</a></li>
+                    <li><a href="business-process-automation.php">Business Process Automation</a></li>
                     <li>/</li>
-                    <li><a href="service.php">Web and Mobile Application Development</a></li>
+                    <li><a href="web-mobile-app-development.php">Web and Mobile Application Development</a></li>
                     <li>/</li>
-                    <li><a href="service.php">Systems Integration and API Development</a></li>
+                    <li><a href="systems-integration-api.php">Systems Integration and API Development</a></li>
                     <li>/</li>
-                    <li><a href="service.php">Digital Commerce Solutions</a></li>
+                    <li><a href="digital-commerce-solutions.php">Digital Commerce Solutions</a></li>
                   </ul>
                   <div class="button-box denge-fade"><a href="contact.php" class="theme-btn-three">Get a Free
                       Consultation <i class="fa-light fa-arrow-up-right"></i></a></div>
@@ -134,11 +135,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-1.png" alt=""></div>
-                      <div class="h4 title"><a href="service.php">Enterprise and Custom Software
+                      <div class="h4 title"><a href="enterprise-software-development.php">Enterprise and Custom Software
                           Development</a></div>
                       <div class="text">XodoSoft develops custom enterprise software, business applications, management
                         platforms and digital systems designed around your operational requirements.</div>
-                      <a href="service.php" class="service-button-one">Read More <i
+                      <a href="enterprise-software-development.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -148,10 +149,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-2.png" alt=""></div>
-                      <div class="h4 title"><a href="service.php">Business Process Automation</a></div>
+                      <div class="h4 title"><a href="business-process-automation.php">Business Process Automation</a></div>
                       <div class="text">Automate workflows, approvals, repetitive tasks and business processes with
                         XodoSoft business process automation solutions.</div>
-                      <a href="service.php" class="service-button-one">Read More <i
+                      <a href="business-process-automation.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -161,11 +162,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-3.png" alt=""></div>
-                      <div class="h4 title"><a href="service.php">Web and Mobile Application
+                      <div class="h4 title"><a href="web-mobile-app-development.php">Web and Mobile Application
                           Development</a></div>
                       <div class="text">XodoSoft develops responsive web applications, business portals and mobile apps
                         designed for performance, usability and business requirements.</div>
-                      <a href="service.php" class="service-button-one">Read More <i
+                      <a href="web-mobile-app-development.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -175,11 +176,11 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-4.png" alt=""></div>
-                      <div class="h4 title"><a href="service.php">Systems Integration and API
+                      <div class="h4 title"><a href="systems-integration-api.php">Systems Integration and API
                           Development</a></div>
                       <div class="text">Connect business applications, databases and digital platforms with XodoSoft
                         system integration and API development services.</div>
-                      <a href="service.php" class="service-button-one">Read More <i
+                      <a href="systems-integration-api.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -189,10 +190,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-5.png" alt=""></div>
-                      <div class="h4 title"><a href="service.php">Digital Commerce Solutions</a></div>
+                      <div class="h4 title"><a href="digital-commerce-solutions.php">Digital Commerce Solutions</a></div>
                       <div class="text">Build scalable e-commerce platforms, Shopify stores and connected digital
                         commerce experiences with XodoSoft.</div>
-                      <a href="service.php" class="service-button-one">Read More <i
+                      <a href="digital-commerce-solutions.php" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
                   </div>
@@ -201,7 +202,7 @@
                   <div class="service-contect-box">
                     <div class="text">We create customized digital strategies that audiences, and achieve measurable
                       growth. Our exceptional business results.</div>
-                    <a href="service.php" class="theme-btn-one">View All Services <i
+                    <a href="enterprise-software-development.php" class="theme-btn-one">View All Services <i
                         class="fa-light fa-arrow-up-right"></i></a>
                   </div>
                 </div>
@@ -308,7 +309,7 @@
                     </div>
                     <div class="icon"><img src="images/icons/service-icon7-1.png" alt="icon"></div>
                     <div class="content">
-                      <div class="h4 title"><a href="service.php">User-Cantered Design</a></div>
+                      <div class="h4 title"><a href="enterprise-software-development.php">User-Cantered Design</a></div>
                       <div class="text">Users are involved from the very start and throughout the entire design and
                         development cycle own goals, contexts</div>
                     </div>
@@ -323,7 +324,7 @@
                     </div>
                     <div class="icon"><img src="images/icons/service-icon8-1.png" alt="icon"></div>
                     <div class="content">
-                      <div class="h4 title"><a href="service.php">Transparent Process</a></div>
+                      <div class="h4 title"><a href="enterprise-software-development.php">Transparent Process</a></div>
                       <div class="text">We provide secure IT solutions with advanced safeguard your data, ensuring
                         reliability and peace of mind.</div>
                     </div>
@@ -337,7 +338,7 @@
                       <div class="image"><img src="images/resource/service4-1.jpg" alt="mask image"></div>
                     </div>
                     <div class="icon"><img src="images/icons/service-icon4-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="service.php">Customized Solutions</a></div>
+                    <div class="h4 title"><a href="enterprise-software-development.php">Customized Solutions</a></div>
                     <div class="text">Every business is unique, & so are our solutions. We tailor IT services to match
                       specific requirements & goals.</div>
                   </div>
@@ -348,7 +349,7 @@
                   <div class="inner-block">
                     <div class="image"><img src="images/resource/service3-1.jpg" alt="mask image"></div>
                     <div class="icon"><img src="images/icons/service-icon3-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="service.php">Strategic Creativity</a></div>
+                    <div class="h4 title"><a href="enterprise-software-development.php">Strategic Creativity</a></div>
                     <div class="text">Our dedicated support team is available around the clock to resolve issues quickly
                       business running smoothly.</div>
                   </div>
@@ -361,7 +362,7 @@
                       <div class="image"><img src="images/resource/service5-1.jpg" alt="mask image"></div>
                     </div>
                     <div class="icon"><img src="images/icons/service-icon5-1.png" alt="icon"></div>
-                    <div class="h4 title"><a href="service.php">Ongoing Support</a></div>
+                    <div class="h4 title"><a href="enterprise-software-development.php">Ongoing Support</a></div>
                     <div class="text">We design and deliver solutions that evolve with technology, preparing your
                       business long-term success.</div>
                   </div>

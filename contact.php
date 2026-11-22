@@ -6,10 +6,11 @@
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <link href="css/theme.css" rel="stylesheet" />
   <link href="css/custom.css" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -90,9 +91,6 @@
                   <button type="submit" class="theme-btn-six mb-2 mb-sm-0" data-loading-text="Please wait...">
                     <span class="btn-title">Send message</span>
                   </button>
-                  <button type="reset" class="theme-btn-six" data-loading-text="Please wait...">
-                    <span class="btn-title">Reset</span>
-                  </button>
                 </div>
               </form>
               <!-- Contact Form Validation-->
@@ -107,14 +105,14 @@
                     <span>Need any help?</span>
                   </div>
                   <div class="h3 title split-text split-in-right">Get in touch with us</div>
-                  <div class="text mt-3">Lorem ipsum is simply free text available dolor sit amet consectetur notted adipisicing elit sed do eiusmod tempor incididunt simply dolore magna.</div>
+                  <div class="text mt-3">Have a project in mind or need help choosing the right solution? Reach out to the XodoSoft team by phone, email or a visit to our office. We usually reply within one business day.</div>
                 </div>
                 <ul class="list-unstyled contact-details__info">
                   <li class="d-block d-sm-flex align-items-sm-center ">
                     <div class="icon"><span class="lnr-icon-phone-plus"></span></div>
                     <div class="text ml-xs--0 mt-xs-10">
                       <div class="h5 mb-1">Have any question?</div>
-                      <a href="tel:980089850"><span>Free</span> +92 (020)-9850</a>
+                      <a href="tel:+922135305947">021-35305947</a>
                     </div>
                   </li>
                   <li class="d-block d-sm-flex align-items-sm-center ">
@@ -128,7 +126,7 @@
                     <div class="icon"><span class="lnr-icon-location"></span></div>
                     <div class="text ml-xs--0 mt-xs-10">
                       <div class="h5 mb-1">Visit anytime</div>
-                      <span>66 broklyn golden street. New York</span>
+                      <span>Office # 9, Apartment, Mezzanine Floor, Marine Galleria, Kehkashan Block 9 Clifton, Karachi, 75600, Pakistan</span>
                     </div>
                   </li>
                 </ul>
@@ -141,7 +139,10 @@
 
       <!-- Map Section-->
       <section class="map-section">
-        <iframe  class="map w-100" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        <iframe class="map w-100" title="XodoSoft office location"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.123261068607!2d67.03359917224049!3d24.82545799795125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d006f504e5b%3A0x2e5a1e8f9b44c7dd!2sXodosoft!5e0!3m2!1sen!2s!4v1795371234736!5m2!1sen!2s"
+          height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </section>
       <!--End Map Section-->
 
