@@ -3,10 +3,101 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Creovibe - Creative Agency HTML Template | Home 1</title>
+  <title>XodoSoft | Enterprise Software, Automation &amp; Digital Solutions</title>
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+
+  <style>
+    /* 01 - Sticky header logo: give it a real size so it never collapses */
+    .sticky-header .logo {
+      flex-shrink: 0;
+    }
+
+    .sticky-header .logo img {
+      width: 180px;
+      height: 54px;
+      max-width: none;
+      max-height: none;
+    }
+
+    /* Header dropdown (Services): wide enough to keep each service on one line */
+    @media (min-width: 1200px) {
+      .main-menu .navigation>li>ul {
+        width: max-content;
+        min-width: 228px;
+      }
+
+      .main-menu .navigation>li>ul>li>a {
+        white-space: nowrap;
+      }
+
+      /* sticky bar menu sits near the right edge - open its dropdowns leftwards so they stay on screen */
+      .sticky-header .main-menu .navigation>li>ul {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    /* 02 - Services: equal-height cards, "Read More" aligned at the bottom */
+    .services-section .row>[class*="col-"]:has(> .service-block) {
+      display: flex;
+    }
+
+    .services-section .service-block {
+      display: flex;
+      flex: 1 1 auto;
+      width: 100%;
+    }
+
+    .services-section .service-block .inner-block {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      width: 100%;
+    }
+
+    .services-section .service-block .service-button-one {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+
+    /* 04 - X (Twitter) icon */
+    .x-icon {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.125em;
+    }
+
+    /* 05 - Footer: proper spacing between Quick Link and Our Solutions */
+    .footer-widget-wrapper .footer-list-area {
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    .footer-widget-wrapper .footer-list-area .footer-widget-items:first-child {
+      flex-shrink: 0;
+    }
+
+    .footer-widget-wrapper .footer-list-area .widget-title .h4 {
+      white-space: nowrap;
+    }
+
+    /* the rotating circle (footer-vec) only shows on xxl screens - keep Quick Link clear of it */
+    @media (min-width: 1400px) {
+      .footer-widget-wrapper .footer-list-area {
+        padding-left: 70px;
+      }
+    }
+
+    @media (max-width: 499.98px) {
+      .footer-widget-wrapper .footer-list-area {
+        display: block;
+      }
+    }
+  </style>
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
   <link rel="icon" href="images/favicon.png" type="image/x-icon" />
@@ -41,19 +132,19 @@
           <div class="main-box">
             <div class="logo-box">
               <div class="logo">
-                <a href="page-about.html"><img src="images/logo.svg" alt="Logo" width="180" height="54" /></a>
+                <a href=""><img src="images/logo.svg" alt="Logo" width="180" height="54" /></a>
               </div>
             </div>
 
             <!--Nav Box-->
             <div class="nav-outer">
               <nav class="nav main-menu">
-                                <ul class="navigation">
+                <ul class="navigation">
                   <li class="current">
                     <a href="index.html">Home</a>
                   </li>
                   <li>
-                    <a href="page-about.html">About</a>
+                    <a href="about.html">About</a>
                   </li>
                   <li class="dropdown">
                     <a href="#">Services</a>
@@ -103,7 +194,7 @@
         <nav class="menu-box">
           <div class="upper-box">
             <div class="nav-logo">
-              <a href="page-about.html"><img src="images/logo.svg" alt="" /></a>
+              <a href=""><img src="images/logo.svg" alt="" /></a>
             </div>
             <div class="close-btn"><i class="icon fa fa-times"></i></div>
           </div>
@@ -118,7 +209,11 @@
             </li>
           </ul>
           <ul class="social-links">
-            <li><a href="#"><i class="icon fab fa-twitter"></i></a></li>
+            <li><a href="https://x.com/xodosoft" target="_blank" rel="noopener noreferrer" aria-label="X"><svg
+                  class="x-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg></a></li>
             <li><a href="#"><i class="icon fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="icon fab fa-pinterest-p"></i></a></li>
             <li><a href="#"><i class="icon fab fa-vimeo-v"></i></a></li>
@@ -149,7 +244,7 @@
           <div class="inner-container">
             <!--Logo-->
             <div class="logo">
-              <a href="page-about.html"><img src="images/logo.svg" alt="" /></a>
+              <a href=""><img src="images/logo.svg" alt="XodoSoft" width="180" height="54" /></a>
             </div>
 
             <!--Right Col-->
@@ -199,7 +294,7 @@
                     <li>/</li>
                     <li><a href="">Digital Commerce Solutions</a></li>
                   </ul>
-                  <div class="button-box denge-fade"><a href="page-about.html" class="theme-btn-three">Get a Free
+                  <div class="button-box denge-fade"><a href="" class="theme-btn-three">Get a Free
                       Consultation <i class="fa-light fa-arrow-up-right"></i></a></div>
                 </div>
               </div>
@@ -237,7 +332,7 @@
                   <div class="text denge-fade">We create tailored digital solutions that help your brand stand out,
                     connect with audiences, and drive measurable growth. Our expertise delivers exceptional business
                     results.</div>
-                  <a href="page-about.html" class="theme-btn-one denge-fade">More About <i
+                  <a href="about.html" class="theme-btn-one denge-fade">More About <i
                       class="fa-light fa-arrow-up-right"></i></a>
                 </div>
               </div>
@@ -282,8 +377,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-1.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Enterprise and Custom Software Development</a></div>
-                      <div class="text">XodoSoft develops custom enterprise software, business applications, management platforms and digital systems designed around your operational requirements.</div>
+                      <div class="h4 title"><a href="page-service-details.html">Enterprise and Custom Software
+                          Development</a></div>
+                      <div class="text">XodoSoft develops custom enterprise software, business applications, management
+                        platforms and digital systems designed around your operational requirements.</div>
                       <a href="page-service-details.html" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
@@ -295,7 +392,8 @@
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-2.png" alt=""></div>
                       <div class="h4 title"><a href="page-service-details.html">Business Process Automation</a></div>
-                      <div class="text">Automate workflows, approvals, repetitive tasks and business processes with XodoSoft business process automation solutions.</div>
+                      <div class="text">Automate workflows, approvals, repetitive tasks and business processes with
+                        XodoSoft business process automation solutions.</div>
                       <a href="page-service-details.html" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
@@ -306,8 +404,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-3.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Web and Mobile Application Development</a></div>
-                      <div class="text">XodoSoft develops responsive web applications, business portals and mobile apps designed for performance, usability and business requirements.</div>
+                      <div class="h4 title"><a href="page-service-details.html">Web and Mobile Application
+                          Development</a></div>
+                      <div class="text">XodoSoft develops responsive web applications, business portals and mobile apps
+                        designed for performance, usability and business requirements.</div>
                       <a href="page-service-details.html" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
@@ -318,8 +418,10 @@
                     <div class="inner-block">
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-4.png" alt=""></div>
-                      <div class="h4 title"><a href="page-service-details.html">Systems Integration and API Development</a></div>
-                      <div class="text">Connect business applications, databases and digital platforms with XodoSoft system integration and API development services.</div>
+                      <div class="h4 title"><a href="page-service-details.html">Systems Integration and API
+                          Development</a></div>
+                      <div class="text">Connect business applications, databases and digital platforms with XodoSoft
+                        system integration and API development services.</div>
                       <a href="page-service-details.html" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
@@ -331,7 +433,8 @@
                       <div class="shape1"><img src="images/icons/shape1.png" alt=""></div>
                       <div class="icon"><img src="images/icons/service-icon1-5.png" alt=""></div>
                       <div class="h4 title"><a href="page-service-details.html">Digital Commerce Solutions</a></div>
-                      <div class="text">Build scalable e-commerce platforms, Shopify stores and connected digital commerce experiences with XodoSoft.</div>
+                      <div class="text">Build scalable e-commerce platforms, Shopify stores and connected digital
+                        commerce experiences with XodoSoft.</div>
                       <a href="page-service-details.html" class="service-button-one">Read More <i
                           class="fa-light fa-arrow-right"></i></a>
                     </div>
@@ -693,11 +796,14 @@
                   <ul class="accordion-box denge-fade">
                     <!--Block-->
                     <li class="accordion block">
-                      <div class="acc-btn">Can you integrate your software with existing systems?<div class="icon fal fa-plus"></div>
+                      <div class="acc-btn">Can you integrate your software with existing systems?<div
+                          class="icon fal fa-plus"></div>
                       </div>
                       <div class="acc-content">
                         <div class="content">
-                          <div class="text">Yes, we offer seamless integration with third-party tools, APIs, legacy systems, and other platforms to ensure unified data flow and smooth operational continuity.</div>
+                          <div class="text">Yes, we offer seamless integration with third-party tools, APIs, legacy
+                            systems, and other platforms to ensure unified data flow and smooth operational continuity.
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -708,7 +814,9 @@
                       </div>
                       <div class="acc-content">
                         <div class="content">
-                          <div class="text">Absolutely. We offer ongoing support, performance monitoring, bug fixes, and system updates post-deployment. Clients can choose from monthly or annual maintenance plans.</div>
+                          <div class="text">Absolutely. We offer ongoing support, performance monitoring, bug fixes, and
+                            system updates post-deployment. Clients can choose from monthly or annual maintenance plans.
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -719,18 +827,24 @@
                       </div>
                       <div class="acc-content current">
                         <div class="content">
-                          <div class="text">At Xodosoft, we ensure data security through encryption, access controls with MFA, secure development practices, regular audits, and strict confidentiality policies—protecting your data from development to deployment and beyond.</div>
+                          <div class="text">At Xodosoft, we ensure data security through encryption, access controls
+                            with MFA, secure development practices, regular audits, and strict confidentiality
+                            policies—protecting your data from development to deployment and beyond.</div>
                         </div>
                       </div>
                     </li>
                     <!--Block-->
                     <li class="accordion block">
-                      <div class="acc-btn">Do you provide training or documentation for your solutions?<div class="icon fal fa-plus">
+                      <div class="acc-btn">Do you provide training or documentation for your solutions?<div
+                          class="icon fal fa-plus">
                         </div>
                       </div>
                       <div class="acc-content">
                         <div class="content">
-                          <div class="text">Yes, we provide comprehensive training and documentation, including tailored onsite or online sessions for users, technical training for IT teams, and video tutorials on request. Our team also offers ongoing support to ensure your team feels confident and fully equipped to use the solution from day one.</div>
+                          <div class="text">Yes, we provide comprehensive training and documentation, including tailored
+                            onsite or online sessions for users, technical training for IT teams, and video tutorials on
+                            request. Our team also offers ongoing support to ensure your team feels confident and fully
+                            equipped to use the solution from day one.</div>
                         </div>
                       </div>
                     </li>
@@ -741,7 +855,10 @@
                       </div>
                       <div class="acc-content">
                         <div class="content">
-                          <div class="text">Yes, we offer flexible payment options to suit your needs, including milestone-based payments, monthly installments, custom financing, and subscription models. Our goal is to make it easier for you to get started without compromising on quality or timelines.</div>
+                          <div class="text">Yes, we offer flexible payment options to suit your needs, including
+                            milestone-based payments, monthly installments, custom financing, and subscription models.
+                            Our goal is to make it easier for you to get started without compromising on quality or
+                            timelines.</div>
                         </div>
                       </div>
                     </li>
@@ -1012,7 +1129,7 @@
         <footer class="footer-section fix bg-cover" style="background-image: url('images/icons/footer-line.png');">
           <div class="container">
             <div class="footer-top-wrapper">
-              <a href="page-about.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s"><img src="images/logo.svg"
+              <a href="" class="footer-logo wow fadeInUp" data-wow-delay=".3s"><img src="images/logo.svg"
                   alt="img" width="180" height="54"></a>
               <div class="lets-talk-content wow fadeInUp" data-wow-delay=".5s">
                 <div class="h2 title">
@@ -1031,10 +1148,18 @@
                     <p><a href="mailto:contact@xodosoft.com">contact@xodosoft.com</a></p>
                     <div class="h4 call-title"><a href="tel:+922135305947">021-35305947</a></div>
                     <div class="social-icon">
-                      <a href="https://www.facebook.com/people/Xodosoft-SMC-Private-Limited/61576297983139/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href="https://x.com/xodosoft" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
-                      <a href="https://www.linkedin.com/company/xodosoft/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-                      <a href="https://www.instagram.com/xodosoft/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://www.facebook.com/people/Xodosoft-SMC-Private-Limited/61576297983139/"
+                        target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="https://x.com/xodosoft" target="_blank" rel="noopener noreferrer" aria-label="X"><svg
+                          class="x-icon" viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor"
+                          aria-hidden="true">
+                          <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg></a>
+                      <a href="https://www.linkedin.com/company/xodosoft/" target="_blank" rel="noopener noreferrer"><i
+                          class="fa-brands fa-linkedin-in"></i></a>
+                      <a href="https://www.instagram.com/xodosoft/" target="_blank" rel="noopener noreferrer"><i
+                          class="fa-brands fa-instagram"></i></a>
                     </div>
                     <div class="h5 get-title">Get the latest inspiration & insights</div>
                     <form action="#">
@@ -1043,8 +1168,8 @@
                     </form>
                   </div>
                 </div>
-                <div class="col-xl-2 d-none d-xl-block"></div>
-                <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="col-xl-1 d-none d-xl-block"></div>
+                <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                   <div class="footer-list-area">
                     <div class="footer-widget-items">
                       <div class="widget-title mb-25">
@@ -1052,7 +1177,7 @@
                       </div>
                       <ul class="user-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="page-about.html">About</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="page-services.html">Services</a></li>
                         <li><a href="page-projects.html">Products</a></li>
                         <li><a href="page-contact.html">Contact Us</a></li>
@@ -1072,11 +1197,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-1 d-none d-xl-block"></div>
               </div>
             </div>
             <div class="footer-bottom">
-              <p>© Copyright <span class="current-year">2025</span> by <a href="https://xodosoft.com" target="_blank" rel="noopener noreferrer">Xodosoft.com</a></p>
+              <p>© Copyright <span class="current-year">2025</span> by <a href="https://xodosoft.com" target="_blank"
+                  rel="noopener noreferrer">Xodosoft.com</a></p>
               <ul class="footer-menu">
                 <li><a href="page-contact.html">Terms & Condition</a></li>
                 <li><a href="page-contact.html">Privacy Policy</a></li>
@@ -1111,6 +1236,27 @@
   <script src="js/SplitText.min.js"></script>
   <script src="js/script.js"></script>
   <script>
+    /* 03 - FAQ: stop the page jumping to the top when an answer opens/closes.
+       Opening an answer changes the page height. ScrollSmoother (v3.11.4) then runs
+       its own internal refresh, which loses the scroll position and slides the page
+       back from the top (hero). Route that refresh through the global
+       ScrollTrigger.refresh(), which keeps the current scroll position. */
+    (function () {
+      function patchSmoother() {
+        var sm = window.ScrollSmoother && ScrollSmoother.get();
+        if (!sm || !window.ScrollTrigger) return false;
+        if (!sm.__xodoPatched) {
+          sm.refresh = function () { ScrollTrigger.refresh(); };
+          sm.__xodoPatched = true;
+        }
+        return true;
+      }
+      if (!patchSmoother()) {
+        document.addEventListener('DOMContentLoaded', patchSmoother);
+        window.addEventListener('load', patchSmoother);
+      }
+    })();
+
     document.addEventListener('DOMContentLoaded', function () {
       const yearNode = document.querySelector('.current-year');
       if (yearNode) {
